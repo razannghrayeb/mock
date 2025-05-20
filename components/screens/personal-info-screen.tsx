@@ -25,8 +25,8 @@ export function PersonalInfoScreen() {
         <TabsList>
           <TabsTrigger value="personal">Personal Details</TabsTrigger>
           <TabsTrigger value="contact">Contact Information</TabsTrigger>
-          <TabsTrigger value="emergency">Emergency Contacts</TabsTrigger>
-          <TabsTrigger value="documents">Documents</TabsTrigger>
+          {/*<TabsTrigger value="emergency">Emergency Contacts</TabsTrigger>*/}
+          {/*<TabsTrigger value="documents">Documents</TabsTrigger>*/}
         </TabsList>
 
         <TabsContent value="personal" className="space-y-4">
@@ -83,6 +83,7 @@ export function PersonalInfoScreen() {
                       </SelectContent>
                     </Select>
                   </div>
+                  {/*
                   <div className="space-y-2">
                     <Label htmlFor="nationality">Nationality</Label>
                     <Input id="nationality" defaultValue="United States" readOnly />
@@ -101,11 +102,12 @@ export function PersonalInfoScreen() {
                       </SelectContent>
                     </Select>
                   </div>
+                */}
                 </div>
               </div>
             </CardContent>
           </Card>
-
+{/*
           <Card>
             <CardHeader>
               <div className="flex items-center justify-between">
@@ -140,6 +142,7 @@ export function PersonalInfoScreen() {
               </div>
             </CardContent>
           </Card>
+          */}
         </TabsContent>
 
         <TabsContent value="contact" className="space-y-4">
@@ -166,18 +169,11 @@ export function PersonalInfoScreen() {
                   <Label htmlFor="phone">Phone Number</Label>
                   <Input id="phone" defaultValue="+1 (555) 123-4567" readOnly />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="workEmail">Work Email</Label>
-                  <Input id="workEmail" type="email" defaultValue="jane.doe@company.com" readOnly />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="workPhone">Work Phone</Label>
-                  <Input id="workPhone" defaultValue="+1 (555) 987-6543" readOnly />
-                </div>
+                
               </div>
             </CardContent>
           </Card>
-
+{/*
           <Card>
             <CardHeader>
               <div className="flex items-center justify-between">
@@ -191,6 +187,7 @@ export function PersonalInfoScreen() {
                 </Button>
               </div>
             </CardHeader>
+            
             <CardContent>
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
@@ -214,10 +211,10 @@ export function PersonalInfoScreen() {
                   <Input id="country" defaultValue="United States" readOnly />
                 </div>
               </div>
-            </CardContent>
-          </Card>
+            </CardContent>  
+          </Card>*/}
         </TabsContent>
-
+{/*
         <TabsContent value="emergency" className="space-y-4">
           <Card>
             <CardHeader>
@@ -458,7 +455,9 @@ export function PersonalInfoScreen() {
               </div>
             </CardContent>
           </Card>
+          
         </TabsContent>
+        */}
       </Tabs>
     </div>
   )

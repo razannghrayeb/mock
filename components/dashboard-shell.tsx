@@ -45,11 +45,6 @@ export function DashboardShell({ children }: { children: ReactNode }) {
       href: "/",
     },
     {
-      title: "Timeline",
-      icon: MessageCircleIcon,
-      href: "/timeline",
-    },
-    {
       title: "Personal Info",
       icon: UserIcon,
       href: "/personal-info",
@@ -75,16 +70,6 @@ export function DashboardShell({ children }: { children: ReactNode }) {
       href: "/leaves",
     },
     {
-      title: "Job Data",
-      icon: CreditCardIcon,
-      href: "/job-data",
-    },
-    {
-      title: "Learning & Development",
-      icon: GraduationCapIcon,
-      href: "/learning",
-    },
-    {
       title: "Settings",
       icon: SettingsIcon,
       href: "/settings",
@@ -99,7 +84,7 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             <div className="flex items-center px-4">
               <div className="flex items-center gap-2">
                 <HomeIcon className="h-6 w-6" />
-                <span className="font-semibold">WorkPortal</span>
+                <span className="font-semibold">ProfilePortal</span>
               </div>
             </div>
           </SidebarHeader>

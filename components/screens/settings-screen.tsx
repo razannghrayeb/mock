@@ -26,8 +26,8 @@ export function SettingsScreen() {
       <Tabs defaultValue="account" value={activeTab} onValueChange={setActiveTab} className="space-y-4">
         <TabsList>
           <TabsTrigger value="account">Account</TabsTrigger>
-          <TabsTrigger value="appearance">Appearance</TabsTrigger>
-          <TabsTrigger value="notifications">Notifications</TabsTrigger>
+          {/*<TabsTrigger value="appearance">Appearance</TabsTrigger>
+          <TabsTrigger value="notifications">Notifications</TabsTrigger>*/}
           <TabsTrigger value="security">Security</TabsTrigger>
         </TabsList>
 
@@ -81,7 +81,6 @@ export function SettingsScreen() {
               </div>
             </CardContent>
           </Card>
-
           <Card>
             <CardHeader>
               <CardTitle>Language and Region</CardTitle>
@@ -226,7 +225,7 @@ export function SettingsScreen() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="notifications" className="space-y-4">
+        {/*<TabsContent value="notifications" className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle>Notification Preferences</CardTitle>
@@ -352,7 +351,7 @@ export function SettingsScreen() {
               </div>
             </CardContent>
           </Card>
-        </TabsContent>
+        </TabsContent>*/}
 
         <TabsContent value="security" className="space-y-4">
           <Card>
@@ -390,6 +389,7 @@ export function SettingsScreen() {
             </CardContent>
           </Card>
 
+          {/*
           <Card>
             <CardHeader>
               <CardTitle>Two-Factor Authentication</CardTitle>
@@ -476,6 +476,7 @@ export function SettingsScreen() {
               </div>
             </CardContent>
           </Card>
+          */}
         </TabsContent>
       </Tabs>
     </div>

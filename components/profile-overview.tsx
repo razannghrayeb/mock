@@ -14,7 +14,6 @@ import { UpcomingHolidaysCard } from "@/components/upcoming-holidays-card"
 import { PayslipCard } from "@/components/payslip-card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Timeline } from "@/components/timeline"
 import { ImageCropper } from "@/components/image-cropper"
 
 export function ProfileOverview() {
@@ -232,16 +231,6 @@ export function ProfileOverview() {
         </TabsContent>
       </Tabs>
 
-      {/* Timeline Section */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Timeline</CardTitle>
-          <CardDescription>Recent activities and updates</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Timeline />
-        </CardContent>
-      </Card>
 
       {isCropperOpen && (
         <ImageCropper
